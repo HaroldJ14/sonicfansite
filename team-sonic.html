@@ -1,128 +1,179 @@
+
 <!DOCTYPE html>
 
-
 <html>
-	
-	<head>
-		<Title>Team Sonic</Title>
-		<meta charset="utf-8"> <!--English-->
-		<link rel="icon" type="image/png" href="https://www.image2url.com/r2/default/images/1792679303973-f6aff351-ab24-4313-9c4e-3c45bb4e4d10.png">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"> <!--Download Fredoka Font-->
-		<style>		
-			body {
-				color: rgb(255, 255, 255); /* Text Color */
-				background-image: linear-gradient(180deg, rgb(0, 180, 255) 0%, rgb(75, 75, 255) 100%); /*Background Color!*/
- 				min-height: 100vh;
-    			background-repeat: no-repeat;
-			}
-			
-			p {
-				font-family: "Comic Sans MS", sans-serif; /*Comic Sans Font*/
-			}
+<head>
+    <title>Team Sonic</title>
+    <meta charset="utf-8">
 
-			h1 {
-				font-family: "Fredoka One", sans-serif; /*set Fredoka Font*/
-			}
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://www.image2url.com/r2/default/images/1792679303973-f6aff351-ab24-4313-9c4e-3c45bb4e4d10.png">
 
-			.sonic-the-hedgehog {
-				background-color: rgb(100, 120, 255); /*section Color*/
-				color: rgb(0, 0, 75); /*Text Color*/
-				width: 25%; /*Section Size*/
-				height: 225px; /*Section Height*/
-				overflow-y: auto; /*Scrollable*/
-            	overflow-x: hidden; /*Does nothing. :|*/
-				border:4px solid;
-				border-radius:12px;
-			}
-			.tails-the-fox {
-				background-color: rgb(240, 160, 75); /*section Color*/
-				color: rgb(100, 25, 0); /*Text Color*/
-				width: 25%; /*Section Size*/
-				height: 225px; /*Section Height*/
-				overflow-y: auto; /*Scrollable*/
-            	overflow-x: hidden; /*Does nothing. :|*/
-				border:4px solid;
-				border-radius:12px;		
-			}
+    <!-- Download Fredoka Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
 
-			.picture {
-				width: 120px; /*Picture Size*/
-				float:left;
-			}
+    <style>
+        body {
+            color: rgb(255, 255, 255); /* Text Color */
+            background-image: linear-gradient(180deg, rgb(0, 180, 255) 0%, rgb(75, 75, 255) 100%); /* Background Color! */
+            min-height: 100vh;
+            background-repeat: no-repeat;
+        }
 
-			ul {
-				font-family: "Comic Sans MS", sans-serif; /*Set list font because it doesn't set it to the same as paragraph:|*/
-			}
-			
-			.flex-container {
-  				display: flex; 
-  				gap: 15px;
-			}
+        p {
+            font-family: "Comic Sans MS", sans-serif; /* Comic Sans Font */
+        }
 
-			.flex-item {
-  				flex: 1;
-			}
+        h1 {
+            font-family: "Fredoka One", sans-serif; /* Set Fredoka Font */
+        }
 
-		</style>
-	</head>
-	
-	<body>
-		<h1>
-			DISCLAIMER
-		</h1>
-		<p>
-			This HTML page is an unofficial fan-made project created for fun and educational purposes. <br>
-			Sonic the Hedgehog and its associated characters and trademarks belong to SEGA and their respective rights holders. <br>
-			This website is not affiliated with or endorsed by SEGA.
-		</p>
-		<h1>
-			Team Sonic:
-		</h1>
-		<div class="flex-container">
-		<div class="sonic-the-hedgehog" class="flex-item">
-			<!--Sonic's Section-->
-			<h1>
-				Sonic The Hedgehog
-			</h1>
-			<img src="https://www.image2url.com/r2/default/images/1792679303973-f6aff351-ab24-4313-9c4e-3c45bb4e4d10.png" 
-				alt="My original Sonic art" class="picture">
-			<p>
-				Sonic the Hedgehog is a caring blue hedgehog, introduced to the world in 1991's hit game, Sonic the Hedgehog. 
-				He has wonderful friends and uses his abilities to defeat Robotnik, also known as Eggman. He is Sega's main mascot.
-				His rival is Shadow, who looks similar to him. Today, Sonic has many games centered around him. There have been some
-				mishaps, like Sonic the Hedgehog (2006), which had inconsistent storylines and a ton of bugs. He is extremely fast and has green eyes.
-				He likes:
-			</p>
+        .sonic-the-hedgehog {
+            background-color: rgb(100, 120, 255); /* Section Color */
+            color: rgb(0, 0, 75); /* Text Color */
+        }
 
-			<ul>
-				<li>Chilli dogs,</li>
-				<li>Saving the world,</li>
-				<li>Saving animals,</li>
-				<li>And spending time with his friends.</li>
-			</ul>
-		</div>
+        .tails-the-fox {
+            background-color: rgb(240, 160, 75); /* Section Color */
+            color: rgb(100, 25, 0); /* Text Color */
+        }
 
-			<div class="tails-the-fox" class="flex-item"> 
-			<!--Tails's section-->
-			<h1>
-				Tails the Fox
-			</h1>
-	<img src="https://www.image2url.com/r2/default/images/1793968134791-73c3b087-8c1e-4649-be21-7e8b779a0306.png" alt="My original Tails art" class="picture">
+        .kte {
+            background-color: rgb(255, 120, 120); /* Section Color */
+            color: rgb(100, 0, 0); /* Text Color */
+        }
 
-			<p>
-				Tails the fox <em>AKA Miles Prower</em> is a brainy young fox. He has orange fur, 
-				blue eyes, and enjoys spending time with his very best friend, Sonic the Hedgehog.
-				He was introduced in 1992's game, Sonic the Hedgehog 2. He has received and lost a lot
-				of character development over the years, from getting his own game, to cowering from a few enemies
-				almost 30 years later.
-				He also enjoys:
-			</p>
+        /* Shared character section styling */
+        .sonic-the-hedgehog,
+        .tails-the-fox,
+        .kte {
+            height: 225px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border: 4px solid;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
 
-			<ul>
-				<li>Eating mints,</li>
-				<li>Making inventions,</li>
-				<li>And flying his plane, "The Tornado".</li>
-			</ul>
-		</div>
-	</body>
+        .picture {
+            width: 120px; /* Picture Size */
+            max-width: 100%;
+            float: left;
+        }
+
+        ul {
+            font-family: "Comic Sans MS", sans-serif; /* Set list font */
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .flex-item {
+            flex: 1;
+            min-width: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        DISCLAIMER
+    </h1>
+
+    <p>
+        This HTML page is an unofficial fan-made project created for fun and educational purposes. <br>
+        Sonic the Hedgehog and its associated characters and trademarks belong to SEGA and their respective rights holders. <br>
+        This website is not affiliated with or endorsed by SEGA.
+    </p>
+
+    <h1>
+        Team Sonic:
+    </h1>
+
+    <div class="flex-container">
+
+        <!-- Sonic's Section -->
+        <div class="sonic-the-hedgehog flex-item">
+
+            <h1>
+                Sonic The Hedgehog
+            </h1>
+
+            <img src="https://www.image2url.com/r2/default/images/1792679303973-f6aff351-ab24-4313-9c4e-3c45bb4e4d10.png"
+                 alt="My original Sonic art" class="picture">
+
+            <p>
+                Sonic the Hedgehog is a caring blue hedgehog, introduced to the world in 1991's hit game, Sonic the Hedgehog.
+                He has wonderful friends and uses his abilities to defeat Robotnik, also known as Eggman. He is Sega's main mascot.
+                His rival is Shadow, who looks similar to him. Today, Sonic has many games centered around him. There have been some
+                mishaps, like Sonic the Hedgehog (2006), which had inconsistent storylines and a ton of bugs. He is extremely fast and has green eyes.
+                He likes:
+            </p>
+
+            <ul>
+                <li>Chilli dogs,</li>
+                <li>Saving the world,</li>
+                <li>Saving animals,</li>
+                <li>And spending time with his friends.</li>
+            </ul>
+
+        </div>
+
+        <!-- Tails's Section -->
+        <div class="tails-the-fox flex-item">
+
+            <h1>
+                Tails the Fox
+            </h1>
+
+            <img src="https://www.image2url.com/r2/default/images/1793968134791-73c3b087-8c1e-4649-be21-7e8b779a0306.png"
+                 alt="My original Tails art" class="picture">
+
+            <p>
+                Tails the fox <em>AKA Miles Prower</em> is a brainy young fox. He has orange fur,
+                blue eyes, and enjoys spending time with his very best friend, Sonic the Hedgehog.
+                He was introduced in 1992's game, Sonic the Hedgehog 2. He has received and lost a lot
+                of character development over the years, from getting his own game, to cowering from a few enemies
+                almost 30 years later.
+                He also enjoys:
+            </p>
+
+            <ul>
+                <li>Eating mints,</li>
+                <li>Making inventions,</li>
+                <li>And flying his plane, "The Tornado".</li>
+            </ul>
+
+        </div>
+
+        <!-- Knuckles's Section -->
+        <div class="kte flex-item">
+
+            <h1>
+                Knuckles the Echidna
+            </h1>
+
+            <!-- Add your original Knuckles artwork here! -->
+            <img src="None" alt="My original Knuckles art" class="picture">
+
+            <p>
+                Knuckles the Echidna is the last of his kind. He guards the Master Emerald, which controls the 7
+                Chaos Emeralds. Introduced in 1994's game, Sonic the Hedgehog 3, he has purple eyes and sharp knuckles,
+                hence his name. He enjoys:
+            </p>
+
+            <ul>
+                <li>Grapes,</li>
+                <li>Punching,</li>
+                <li>And of course, more grapes.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
 </html>
