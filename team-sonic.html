@@ -31,9 +31,6 @@
 				height: 225px; /*Section Height*/
 				overflow-y: auto; /*Scrollable*/
             	overflow-x: hidden; /*Does nothing. :|*/
-				position: absolute;
-            	top: 40%;
-            	left: 5%;			
 				border:4px solid;
 				border-radius:12px;
 			}
@@ -44,9 +41,6 @@
 				height: 225px; /*Section Height*/
 				overflow-y: auto; /*Scrollable*/
             	overflow-x: hidden; /*Does nothing. :|*/
-            	position: absolute;
-            	top: 40%;
-            	left: 35%;	
 				border:4px solid;
 				border-radius:12px;		
 			}
@@ -59,6 +53,16 @@
 			ul {
 				font-family: "Comic Sans MS", sans-serif; /*Set list font because it doesn't set it to the same as paragraph:|*/
 			}
+			
+			.flex-container {
+  				display: flex; 
+  				gap: 15px;
+			}
+
+			.flex-item {
+  				flex: 1;
+			}
+
 		</style>
 	</head>
 	
@@ -74,7 +78,8 @@
 		<h1>
 			Team Sonic:
 		</h1>
-		<div class="sonic-the-hedgehog">
+		<div class="flex-container">
+		<div class="sonic-the-hedgehog" class="flex-item">
 			<!--Sonic's Section-->
 			<h1>
 				Sonic The Hedgehog
@@ -97,7 +102,7 @@
 			</ul>
 		</div>
 
-			<div class="tails-the-fox"> 
+			<div class="tails-the-fox" class="flex-item"> 
 			<!--Tails's section-->
 			<h1>
 				Tails the Fox
